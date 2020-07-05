@@ -50,9 +50,11 @@ $(document).ready(function(){
   
       });
     })
-  $(window).resize(function(){
-    location.reload();
-  })
+
+    if(window.matchMedia('(min-width : 400px)').matches)
+	  $(window).resize(function(){
+	    location.reload();
+	  })
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
   
