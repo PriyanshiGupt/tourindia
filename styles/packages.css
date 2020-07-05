@@ -1,0 +1,272 @@
+
+.container-fluid{
+	background:pink url('../images/package.jpg');
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: fixed;
+
+}
+.container-fluid h1{
+	text-align: center;
+	top:50%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color:white;
+	font-weight: 300;
+	font-size: 60px;
+}
+
+.container-fluid #myBtnContainer
+{
+	text-align: center;
+	top:70%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color:white;
+	font-weight: 300;
+	font-size: 40px;
+	white-space: nowrap;
+}
+.ctrbcg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: #31124b;
+	opacity: 0.5;
+}
+
+#myBtnContainer button
+{
+	background: white;
+	color:#31124b;
+	font-size: 20px;
+}
+
+#myBtnContainer button:hover
+{
+	background: lightblue;
+	color: #511e7b;
+}
+
+.destinations
+{
+	background: #ddd;
+	padding:50px 0px;
+}
+.dest
+{
+	margin-bottom: 30px;
+}
+.dest .col-lg-4
+{
+	position: relative;
+}
+.img
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.img img
+{
+	width: 100%;
+	transform: scale(1);
+	transition: all .5s ease;
+	
+}
+.dest .col-lg-4:hover img
+{
+	transform: scale(1.1);
+}
+.imgtext{
+	position: relative;
+	top:0px;
+	background-color: #fa9e1b;
+	left:50%;
+	transform: translate(-50%,-50%);
+	border-radius: 20px;
+	padding: 8px;
+	color:#31124b;
+	width: 40%;
+	text-align: center;
+	vertical-align: center;
+	transition: all .5s ease;
+	margin: 0px;
+}
+.dest .col-lg-4:hover .imgtext
+{
+	padding: 8px 20px;
+	background-color: #31124b;
+	color:white;
+	width: 47%;
+}
+.list{
+	background: transparent;
+}
+.destinations h2{
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 50px;
+	word-spacing: 5px;
+	text-align: center;
+}
+.exper h2{
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 50px;
+	word-spacing: 5px;
+	text-align: center;
+}
+.exper{
+	background: #ddd;
+	width: 100%;
+	padding: 90px;
+}
+.box{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    perspective: 800px;
+    position: relative;
+    background: #31124b;
+    border-radius: 5px;
+}
+.box:before,
+.box:after{
+    content: "";
+    background: rgba(255,255,255,0.9);
+    width: 44%;
+    height: 42%;
+    opacity: 0;
+    transform: translateY(-50%) rotateY(90deg);
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 6.3%;
+    z-index: 1;
+    transition: all 0.7s ease-out;
+}
+.box:after{
+    /*transform: translateY(-50%) rotateY(-90deg);*/
+    transform-origin: left center;
+    left: auto;
+    right: 6%;
+}
+.box:hover:before,
+.box:hover:after{
+    opacity: 1;
+    transform: translateY(-50%) rotateY(0);
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+
+}
+.box:hover img{ /*filter:saturate(2.5);*/
+				transform: scale(0.97);
+				opacity: 0.7;
+ 				}
+.box .box-content{
+    color: #6c5ce7;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transition: all 0.4s;
+}
+.box:hover .box-content{ opacity: 1; }
+.box .title{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:auto;
+}
+.exper .col-md-4
+{
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 700px)
+{
+ 
+  .exper{padding: 30px;}
+}
+@media only screen and (max-width: 600px)
+{
+.container-fluid{
+    height: 350px;
+  }
+  .container-fluid h1{
+    top:50%;
+    font-size: 60px;
+  }
+ 
+}
+@media only screen and (max-width: 1323px)
+{
+.container-fluid{
+    height: 400px;
+  }
+  .container-fluid h1{
+    top:50%;
+    font-size: 60px;
+  }
+ 
+}
+@media only screen and (max-width: 525px)
+{
+  .container-fluid h1{
+    font-size: 60px;
+    white-space: normal;
+    top:40%;
+  }
+  .container-fluid #myBtnContainer{
+  	font-size: 20px;
+  	white-space: normal;
+  	top:60%;
+	left: 0%;
+	transform: translateX(0%);
+	
+  }
+  #myBtnContainer button{margin-bottom: 5px;}
+}
+@media only screen and (max-width: 350px)
+{
+  .container-fluid h1{
+   
+    top:30%;
+  }
+  .container-fluid #myBtnContainer{
+  	top:50%;
+	}
+  
+}
+@media only screen and (max-width: 770px)
+{
+  .container-fluid h1{
+    font-size: 60px;
+    white-space: normal;
+    top:40%;
+  }
+  .container-fluid #myBtnContainer{
+  	font-size: 20px;
+  	white-space: normal;
+  	top:60%;
+	left: 0%;
+	transform: translateX(0%);
+	
+  }
+  #myBtnContainer button{margin-bottom: 5px;}
+   .exper{padding: 30px;}
+}

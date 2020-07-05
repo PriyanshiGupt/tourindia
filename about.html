@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TourIndia</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="styles/main.js"></script>
+<link rel="short icon" type=image href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/about.css">
+
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<script src="owl.carousel.js"></script>
+<style type="text/css">
+#countings
+{
+	padding: 0px 100px;
+	align-items: center;
+}
+#countings img{
+	height: 70px;
+	width: auto;
+}
+#countings p{
+	text-transform: uppercase;
+	color: #030303;
+	font-size: 17px;
+	text-align: center;
+}
+#countings p span{
+	font-size: 40px;
+	font-weight: 500;
+}
+
+
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg ">
+					
+		  <a class="navbar-brand" href="home.html"><img src="images/logo.png"> TourIndia.com</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		      <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		    	<li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      
+		      <li class="nav-item">
+		        <a class="nav-link" href="packages.html">Packages</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="Destinations.html">Destinations</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="Experiences.html">Experiences</a>
+		      </li>    
+		    </ul>
+		  </div>  
+		</nav>
+<div class=container-fluid>
+	<div class=ctrbcg></div>
+	<h1>About Us</h1>
+</div>
+<div class="row best">
+	<div class="col-lg-7 col-md-6 col-sm-12"><img src="images/about1.png" width="100%"></div>
+	<div class="col-lg-5 col-md-6 col-sm-12" id="intro">
+		<h3>We Have The Best Tours</h3>
+		<p>Traveling with TourIndia provides with all what you demand from a travel guide and much more. Creating proper environment for you to comfortable and satisfied is our basic requirement. From living arrangements to travel arrangements, to various fun activities to most adventurous ones, We ensure full safety for you. Because Your safety is our responsibility. With a private guide and location manager, we give you a full freedom to enjoy your trip in your own way. And that makes us much different from all others.</p>
+		<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=packages.html>See More<span></span><span></span><span></span></a></div>
+
+	</div>
+</div>
+<!------------------------------------------------------------------------------------------------------->
+<div class="row" id=countings>
+	<div class=col-sm-3>
+		<p><img src="images/milestone_1.png" style="height: 70px;"><br>
+		<span id=increase class=count>700</span><br>Successful Tours</p>
+	</div>
+	<div class=col-sm-3>
+		<p><img src="images/milestone_4.png" style="height: 60px;margin-bottom: 10px;"><br>
+		<span id=increase class=count>19000</span><br>Happy Tourists</p>
+	</div>
+	<div class=col-sm-3>
+		<p><img src="images/milestone_2.png" height="70px"><br>
+		<span id=increase class=count>200</span><br>Adventures Done</p>
+	</div>
+	
+	<div class=col-sm-3>
+		<p><img src="images/milestone_3.png" style="height: 60px;margin-bottom: 10px;"><br>
+		<span id=increase class=count>500</span><br>Places Explored</p>
+	</div>
+	
+</div>
+<script>
+	$(window).scroll(function() {
+    var hT = $('#countings').offset().top,
+        hH = $('#countings').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    console.log((hT - wH), wS);
+    if (wS > (hT + hH - wH)) {
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        }); {
+            $('.count').removeClass('count').addClass('counted');
+        };
+    }
+});
+
+</script>
+<!------------------------------------------------------------------------------------------------------->
+		<div class=testimonial-area>
+	<center><h2>Tourist Feedback</h2></center>
+
+	<div class=container>
+		<div class=row>
+			<div class=col-md-12>
+				<div class="test-slides owl-carousel" id=testimonial-carousel>
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist2.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Erika Johnson<span>July 16, 2019</span></h4>
+								<p>Best trip ever!!  
+								The travel designer at this travel agency not only planned but checked on our progress and satisfaction throughout the trip.  He really exceeded our expectations. From the very first email and phone call, he listened to what we wanted in this very customized Summer vacations</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist1.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Priyanshi Gupta<span>June 5, 2019</span></h4>
+								<p>The trip was a cultural, food and religious tour of South India.
+								Our agent immediately called and asked and then suggested several ideas.
+								She contacted me if there was going to a change and was available during the trip for a request.
+								The hotel selections were excellent and all centrally located and we were happy.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist3.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>David Wood<span>May 23, 2019</span></h4>
+								<p>Our trip planner was a thoroughly professional guide for our Rajasthan tour. He purposely over planned each day, taking into account the weather and many other factors, in order to maximize our time. His knowledge and love for his beautiful home land were evident daily.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist5.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Nancy Shergill<span>March 30, 2019</span></h4>
+								<p>The trip planned by this travel team was amazing. They got a good sense of what we wanted and catered the lodgings and tours perfectly. Although we had been to India several times before, we decided that we could use some help in structuring a trip starting in Delhi, to east and south.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	$('#testimonial-carousel').owlCarousel({
+		autoplay:true,
+		dots:false,
+		nav:true,
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+<hr style="background: linear-gradient(to right,#fa9e1b,#8d4fff ); height:1px;margin: 0px;">
+	<div class="footer row">
+		<div class="col-lg-4" >
+			<a href=# id=tag><img src="images/logo.png"> TourIndia.com</a>
+			<br><br>
+			<p id=footerdiscription>Promissing to fulfill our duties with honesty and determination, We aim to fulfill your dreams to travel and enjoy the life to the fullest.We ensure you safe and memorable tour. </p>
+			<div class="rating rating_5" style="text-align: center;padding-right: 50px;">
+									<i class="fa fa-star" ></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+		</div>
+		<div class="col-lg-6 " >
+			<p style="text-align: center;color:white; font-weight: 700;text-transform: uppercase;">Arriving Soon</p>
+			<div class="row">
+				<div class="col-sm-6 " >
+			<ul class="coming" >
+				<li><div class=new><img src="images/indonesia-img.jpg" align=left> <p>Indonasia trip coming year<br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/sri-lanka-img.jpg" align="left"> <p> Visit Sri Lanka next Year<br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/singapore-img.jpg" align="left"> <p> This summer in Singapore <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+
+		<div class="col-sm-6 ">
+						<ul class="coming">
+				<li><div class=new><img src="images/thailand-img.jpg" align=left> <p>Planning for thailand  <br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/maldives-img.jpg" align="left"> <p> Sure to Maldives <br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/dubai-img.jpg" align="left"> <p> Dubai for a visit <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		<div class="col-lg-2" id=contacts>
+			<p>Contact Info</p>
+			<ul id=contactinfo>
+				<li><span class="fa fa-location-arrow">2346 Laxmi Nagar</li>
+				<li>New Delhi</li>
+				<li><a href="tel:1234567"><span class="fa fa-phone"></span> 6798-6798</a></li>
+				<li><a href="mailto:tourindia@gmail.com" target="_blank"><span class="fa fa-envelope"></span> tourindia@gmail.com</a></li>
+				<li id=icons><span class="fa fa-behance-square"></span> <span class="fa fa-facebook-square"></span> <span class="fa fa-twitter-square"></span></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+.container-fluid{
+	background:pink url('../images/about.jpg');
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: fixed;
+
+}
+.container-fluid h1{
+	text-align: center;
+	top:70%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color:white;
+	font-weight: 300;
+	font-size: 50px;
+}
+.ctrbcg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: #31124b;
+	opacity: 0.5;
+}
+.best{
+	padding: 100px 60px;
+}
+#intro h3{
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 60px;
+}
+#intro p{
+	font-size: 18px;
+	padding-bottom: 45px;
+	text-align: justify;
+}
+@media only screen and (max-width: 600px)
+{
+.container-fluid{
+		height: 350px;
+	}
+	.container-fluid h1{
+		top:60%;
+	}
+
+}
+

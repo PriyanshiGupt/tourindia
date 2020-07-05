@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TourIndia</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="styles/main.js"></script>
+<link rel="short icon" type=image href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/destinationfileitems.css">
+
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<script src="owl.carousel.js"></script>
+</head>
+<body data-spy=scroll data-target=".nav-pills" data-offset=300 style="position: relative;">
+	<nav class="navbar navbar-expand-lg ">
+					
+		  <a class="navbar-brand" href="home.html"><img src="images/logo.png"> TourIndia.com</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		      <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		    	<li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      
+		      <li class="nav-item">
+		        <a class="nav-link" href="packages.html">Packages</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="destinations.html">Destinations</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="experiences.html">Experiences</a>
+		      </li>    
+		    </ul>
+		  </div>  
+		</nav>
+		<div class="container-fluid top" style="background:pink url('images/centralindia.jpg');">
+		<div class=ctrbcg></div>
+		<h1>Central India</h1>
+		</div>
+
+		<div class="container-fluid" style="margin: 90px 0px;">
+			<div class="row" style="">
+				<div class="col-lg-2 col-sm-2" style="position: relative;">
+					<ul class="nav nav-pills flex-column" style="top:10px;">
+						    <li class="nav-item">
+						      <a class="nav-link " href="#section1">Chhattisgarh</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section2">Gwalior</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section3">Bhopal</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section4">Madhya Pradesh</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section5">Maharashtra</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section6">Ujjain</a>
+						    </li>
+					</ul>
+<script>
+	$(document).ready(function(){
+		$('.intro-text').removeClass('container');
+		$(window).scroll(function(){
+			var h=$(window).scrollTop();
+			var lim=$("#last").offset().top;
+			var w=$('.nav-pills').width();
+			var tw=$(window).width();
+		lim=lim-100;
+
+		if(h>300&&h<lim&&tw>=768)
+		{
+			$(".nav-pills").css({"position":"fixed", "top":"150px", "width":w+"px" });
+		}
+		else{
+			$(".nav-pills").css({"position":"relative", "top":"10px"});
+		}
+		lim=lim-200;
+		if(h>300&&h<lim)
+		{
+			$("#add2").addClass("fixadd");
+		}
+		else{
+			$("#add2").removeClass("fixadd");
+		}
+
+
+		})
+		
+
+	});
+</script>
+				</div>
+
+				<div class="col-lg-8 col-md-10 material">
+					<div id="section1" class="grp container-fluid">
+						<img src="images/Chhattisgarh.jpg" width="100%">
+						<div class="dest-title">Chhattisgarh</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Ghotul is a better-known event in tribal life and they have aroused considerable interest from anthropologists to study the tradition. Both boys and girls
+ are allowed to spend a night out in the ghotul (kind of rest house), every week. Ghotuls are regarded as a shrine, built by Lingo Pen, a Gond (a tribe) cult hero. Here, the unmarried boys of the village learn songs 
+ and dance from their leader. Besides, every week, there is a dance carnival as well in which the girls also take part. Moreover, It is treated like a pilgrimage.
+Dussehra is celebrated with much enthusiasm in Jagdalpur every year.Major tourist centres in the state are Amarkantak, Banjari Baba, Bhoramdev,
+ Champaranya, Chitrakoot, Dudhadharimath, Indrawati National Park, Kangerghati National Park, Jagdalpur, Bastar, Danteswari Temple, and many more.
+</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section2" class="grp container-fluid">
+						<img src="images/gwalior.jpg" width="100%">
+						<div class="dest-title">Gwalior</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+The mighty Gwalior Fort was built in the 15th century by Raja Mansingh Tomar on a hilltop that overlooks the city. The outer wall of the fort stands two miles in length and 35 m in height. A steep road winds upwards to the fort, flanked by statues of the Jain Tirthankaras, carved into the rock face.
+
+Man Mandir is the Fort's piece de resistance. The palace built by Man Singh Tomar is a delicate structure exhibiting a sense of joy and abandon through use of color, motif, and design. There are chambers for affairs of state as well as those for relaxation, adorned appropriately and ornately with carved animals, flowers, and the human form.
+
+If Man Mandir reflects Man Singh's aesthetic sensibilities, Gujari Mahal speaks of his love. The courage and beauty of Mrignayani and her love with Raja Mansingh are now a part of popular folk tradition. The palace has been now converted in a museum and houses very good collection of Jain and Hindu artifacts.
+
+Contrasting with the predominant north Indian style of architecture is the Teli-ka-Mandir. This temple is believed to the oldest in the Fort, built in the ninth century and Dravidian in form. The sculptures are distinctly north Indian. Some believed it was so named because it was built in the Telangana style; others say this was because it was built by telis (oil merchants). A more recent study ascribes it to Telap Raj, a prime minister of the region.
+
+The Sas-Bahu temples, in another part of the Fort, are not, as people believe, dedicated to a mother-in-law (Sas) and daughter-in-law (Bahu). Sas-Bahu is the name traditionally given to two adjoining temples of different sizes. The larger of the two is profusely sculpted with graceful figures and intricate patterns. This is more apparent in the interior where, above the sculpted walls and pillars, an elaborately carved lotus adorns the roof.
+
+The chhatris, memorials to former Scindia rulers, are executed in the typical Bundelkhandi style with conical spires and heavily carved exteriors.
+
+At another point in the city is the tomb of Mohammad Ghaus. Although of little importance from a historical perspective, the sheer beauty of the tomb is breathtaking. The stone carving for which the skilled artisans of Gwalior were justly famous is apparent in the huge panels of lacy screen work, which combine with an interesting architectural design to create a delicate, ethereal appeal.
+
+Adjacent is a small white, austere tomb. This is the memorial to Tansen, a famed musician, and one of the nine gems of the Mughal emperor Akbar's court.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section3" class="grp container-fluid">
+						<img src="images/bhopal.jpg" width="100%">
+						<div class="dest-title">Bhopal</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Bhopal has a number of tourist attractions. There are a number of important mosques, but the most revered is the Taj-ul-Masjid, which is the largest mosque in
+ India. The Jama Masjid and the Moti Masjid of Bhopal are other important mosques built by the local Begums in the 19th century. Shaukat Mahal and Sadar Manzil,
+ located in the chowk area, in the heart of the old walled city, are other important tourist attractions. While Shaukat Mahal is a strange mixture of Indo-Islamic and European style of architecture, Sadar Manzil is a hall used by the local rulers for public audience. Bhopal is famous for Bharat Bhavan, a marvel of modern architecture and a museum of tribal and contemporary art forms and breeding ground for traditional dance, music and drama. The Tribal Habitat or Manav Sangrahalaya (the Museum of Man), located on Shamala hills of Bhopal, is an open-air museum depicting tribal dwellings, from all parts of India. The tranquil Upper Lake and the Lower Lake are important tourist spots with boating and sailing facilities. The Government Archeological Museum near the Lower Lake, the chowk at the heart of the old city, Van Vihar local safari park near the Upper Lake, and the Aquarium are other places worth visiting within the city limits. The Lakshmi Narayan Temple (or the Birla Mandir) and the adjacent local museum on the Arera hills are other sites to be visited.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section4" class="grp container-fluid">
+						<img src="images/madhya.jpg" width="100%">
+						<div class="dest-title">Madhya Pradesh</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+The state of Madhya Pradesh reveals the charming and captivating combination of the beauty of nature, tradition as well as trend. Madhya Pradesh is renowned for the temples of Khajuraho and the spectacular sculptures there. The World heritage site of the Stupas of Sanchi is thronged not only by the Buddhists but the tourists from across the globe. For the animal lovers Madhya Pradesh offers the Kanha National Park, Karera Bird Sanctuary, Bandhavgarh Park, Panna National Park, Pench National Park and the Shivpuri N. Park to catch up with the Barasingha or Swamp Deer, Bison and the White Tiger (albinotic). The golden triangle comprises of Gwalior-Jhansi-Khajuraho as the major tourist destinations with Shivpuri and Orchha on the route. This triangle is popular with the tourists. The destinations of Bhopal, Indore, Gwalior, Jabalpur, Panchmarhi, Mandu, Chitrakut and Ujjain are not to be missed while in Madhya Pradesh.
+<br>
+You may participate in the celebrations of the Khajuraho dance and music festival and the storehouse of the rich tribal and folk cultural extravaganza Pachmarhi festival in Madhya Pradesh.
+<br>
+The state of Madhya Pradesh is well connected and easily accessible. The airport at the capital city of Bhopal caters to the air transport in Madhya Pradesh. The railhead at Bhopal links the state of Madhya Pradesh with the other places of interest within the state as well as the neighboring states. Similarly the excellent road network caters to the transport between the important destinations in Madhya Pradesh through the state and the national highways</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section5" class="grp container-fluid">
+						<img src="images/maharashtra.jpeg" width="100%">
+						<div class="dest-title">Maharashtra</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+VMumbai- A city that never sleeps, if you want to feel fresh young and rejuvenated then Mumbai is for you. Flooded with discotheques, Restaurants and night clubs Mumbai in actual is the Las 
+Vegas of India. Mumbai is a city where every night seems like a festival night. So, with heartiest happiness we welcome you to the city of wonders, Mumbai.
+Mumbai has an international airport, Chattrapati Shivaji International Airport, formerly known as Sahar International Airport. This airport is located at a distance of 30 km from the city center, Nariman and 4 km from the domestic terminal in Santa Cruz. Regular flights connect this airport to important cities of India and World. Both
+ the terminals are 5 km away from each other. Regular shuttle bus service is available between the two. Private cabs are available from outside the airport.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section6" class="grp container-fluid">
+						<img src="images/ujjain.jpg" width="100%">
+						<div class="dest-title" id=last>Ujjain</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+One of the holiest of Hindu cities, Ujjain has a plethora of temples that are spread all over the town. The most notable are the Bhaironath (the liquor drinking deity) temple; Mangalnath temple, situated at the place where the first meridian is said to pass the earth; Chintaman Ganesh, the temple said to have been established by Lord Ram himself; Har Siddhi Mata, the family goddess of King Vikramaditya; and deep in the bazaar, Gopal Mandir, a Krishna temple. A popular local saying has it that even if one came with two cart loads of grain and offered only one handful at each temple one would still run short of offering.
+<br>
+While Mahakal is undoubtedly the presiding deity of Ujjain, the other gods of the Hindu pantheon are also well represented in the hundreds of other temples all over the town. One of the major attractions of the town is the Bhasma Aarti held every dawn at the Mahakal temple. In this ritual, the master of cosmic time is propitiated with ash from a cremation ground, the ash being symbolic of the end of a particular manifestation of existential time.
+<br>
+Apart from the temples, the other buildings of Ujjain merit far more than a casual look. "Its houses are like palaces and its palaces are like mountains," wrote Kalidasa, and even today that observation is not very far off the mark. Ujjain is quite simply a traveler's dream destination, one that should not be seen in hurry but savored slowly. </p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+
+				</div>
+
+				<div class="col-lg-2" style="position: relative;padding: 0px;">
+					
+  <div id=add2 style=" background:url('images/dressadd.png') ; background-size: cover;height: 550px;width: 225px;left: 0px;position: absolute;">
+    <a style="float: right; padding:10px 15px 0px 0px;cursor: pointer;" id=grapes> &times;</a>
+    <center><a href=https://www.facebook.com/dresstheoccasions target="_blank" class="btn btn-warning" style="font-size: 30px;margin-top:480px;">Browse..</a></center>
+  </div>
+				</div>
+			</div>
+		</div>
+<script>
+	$(document).ready(function(){
+		$("#grapes").click(function(){
+			$("#add2").fadeOut();
+		})
+	})
+</script>
+		<hr style="background: linear-gradient(to right,#fa9e1b,#8d4fff ); height:1px;margin: 0px;">
+	<div class="footer row">
+		<div class="col-lg-4" >
+			<a href=# id=tag><img src="images/logo.png"> TourIndia.com</a>
+			<br><br>
+			<p id=footerdiscription>Promissing to fulfill our duties with honesty and determination, We aim to fulfill your dreams to travel and enjoy the life to the fullest.We ensure you safe and memorable tour. </p>
+			<div class="rating rating_5" style="text-align: center;padding-right: 50px;">
+									<i class="fa fa-star" ></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+		</div>
+		<div class="col-lg-6 " >
+			<p style="text-align: center;color:white; font-weight: 700;text-transform: uppercase;">Arriving Soon</p>
+			<div class="row">
+				<div class="col-sm-6 " >
+			<ul class="coming" >
+				<li><div class=new><img src="images/indonesia-img.jpg" align=left> <p>Indonasia trip coming year<br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/sri-lanka-img.jpg" align="left"> <p> Visit Sri Lanka next Year<br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/singapore-img.jpg" align="left"> <p> This summer in Singapore <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+
+		<div class="col-sm-6 ">
+						<ul class="coming">
+				<li><div class=new><img src="images/thailand-img.jpg" align=left> <p>Planning for thailand  <br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/maldives-img.jpg" align="left"> <p> Sure to Maldives <br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/dubai-img.jpg" align="left"> <p> Dubai for a visit <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		<div class="col-lg-2" id=contacts>
+			<p>Contact Info</p>
+			<ul id=contactinfo>
+				<li><span class="fa fa-location-arrow">2346 Laxmi Nagar</li>
+				<li>New Delhi</li>
+				<li><a href="tel:1234567"><span class="fa fa-phone"></span> 6798-6798</a></li>
+				<li><a href="mailto:tourindia@gmail.com" target="_blank"><span class="fa fa-envelope"></span> tourindia@gmail.com</a></li>
+				<li id=icons><span class="fa fa-behance-square"></span> <span class="fa fa-facebook-square"></span> <span class="fa fa-twitter-square"></span></li>
+			</ul>
+		</div>
+	</div>
+
+ <script>
+ 	$('.read').click(function(){
+ 		$(this).parent().toggleClass('minimize');
+ 		$(this).prev().prev().toggleClass('minimized-bcg');
+ 		$(this).text($(this).text() == 'Read More +' ? 'Read Less -' : 'Read More +');
+ 	})
+ </script>
+  		
+</body>
+</html>

@@ -1,0 +1,128 @@
+.container-fluid
+{
+	background: url('../images/dest-indiamap.jpg');
+	background-position: center;
+	height: 589px;
+	width: 100%;
+	z-index: 4;
+	position: relative;
+}
+.container-fluid .button
+{
+	z-index: 5;
+	top:75%;
+	left:43%;
+}
+
+.destinations
+{
+	background: #ddd;
+	padding:50px 0px;
+}
+
+.dest .col-lg-4
+{
+	position: relative;
+	margin-bottom: 30px
+}
+.img
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.img img
+{
+	width: 100%;
+	transform: scale(1);
+	transition: all .5s ease;
+	
+}
+.dest .col-lg-4:hover img
+{
+	transform: scale(1.1);
+}
+/*.img:hover .imgtext
+{
+	color:#fa9e1b;
+	font-size: 22px;
+}*/
+.imgtext{
+	position: relative;
+	top:0px;
+	background-color: #fa9e1b;
+	left:50%;
+	transform: translate(-50%,-50%);
+	border-radius: 20px;
+	padding: 8px;
+	color:#31124b;
+	width: 40%;
+	text-align: center;
+	vertical-align: center;
+	transition: all .5s ease;
+	margin: 0px;
+}
+#dancers{
+	position:absolute;
+	bottom:25%;
+	left:47%;
+	width:7%;
+	height:28%;
+}
+.dest .col-lg-4:hover .imgtext
+{
+	padding: 8px 20px;
+	background-color: #31124b;
+	color:white;
+	width: 47%;
+}
+.list{
+	background: white;
+	border-radius:  0px 0px 5px 5px;
+	padding-bottom: 20px;
+	
+}
+.list ul{
+	list-style-type: none;
+}
+
+@media only screen and (max-width: 1380px)
+{
+	
+}
+
+@media only screen and (max-width: 999px)
+{
+	.container-fluid{height: 400px;}
+	#dancers{left:50%;}
+}
+@media only screen and (max-width: 800px)
+{
+	.container-fluid>.button{left: 50%;transform: translate(-50%);}
+	.container-fluid{
+		background:url(../images/dest-india-small1.jpg) no-repeat;
+		background-position: top right;
+		background-size: cover;
+	}
+	.container-fluid>div:first-child{display: block!important;}
+	#dancers{left:46%;}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.imgtext{width: 60%;}
+	.dest .col-lg-4:hover .imgtext
+		{
+			width: 65%;
+		}
+}
+@media only screen and (max-width: 576px)
+{
+	.dest{padding: 60px;}	
+
+}
+@media only screen and (max-width: 355px)
+{
+	.dest{padding: 30px;}	
+	.container-fluid>div:first-child{font-size: 25px!important;}
+}

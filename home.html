@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TourIndia</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="styles/main.js"></script>
+<link rel="short icon" type=image href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<script src="owl.carousel.js"></script>
+<style>
+	.modal-body .form-check{
+		margin-bottom: 3px;
+		background: #eee;
+		padding: 5px 10px;
+	}
+	input[type=radio].form-check-input
+	{
+		position: relative;
+		margin:0px 10px 0px 5px ;
+
+	}
+	.modal .label{padding:20px;}
+	.modal-body button
+	{
+		margin-top:10px;
+	}
+	/*#asds{opacity:0.1!important;}
+	/*.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+  vertical-align: center;
+	
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}*/
+</style>
+</head>
+
+<body ng-app='myapp' ng-controller='ctrl'>
+	<div class="load" id=asd>
+		<div class="modal " id=mymod>
+			<div id="dancers" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);">
+				<img   src="images/loade.gif" width="100%;">
+				 <!--<div class="progress" style="height:5px" style="width: 100%">
+				    <div class="progress-bar" style="width:0%;height:5px;background:#fa9e1b;"></div>
+				  </div>-->
+       		</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				 $("#mymod").modal({
+            backdrop: 'static',
+            keyboard: false,
+
+        });
+
+				 $("mymod").modal("show");
+				 $('#mymod').css('background','white');
+				  $(".progress-bar").animate({width:"100%"},"slow");
+			})
+			
+		</script>
+	</div>
+<div class="allmaterial">
+	<div class="cntr">
+	<div class="cntr-innr">
+	  <label class="search" for="inpt_search">
+			<input id="inpt_search" type="text" />
+		</label>
+		
+	</div>
+</div>
+
+	<div id="nav-carousel">
+
+		<nav class="navbar navbar-expand-lg ">
+					
+		  <a class="navbar-brand" href="home.html"><img src="images/logo.png"> TourIndia.com</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		      <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		    	<li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      
+		      <li class="nav-item">
+		        <a class="nav-link" href="packages.html">Packages</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="destinations.html">Destinations</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="experiences.html">Experiences</a>
+		      </li>    
+		    </ul>
+		  </div>  
+		</nav>
+<!--*****home-page-carousel*****-->
+		<div id=carousel_container>
+
+			<div id="demo" class="carousel slide" data-ride="carousel" >
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" >
+		      <div class="carback"style="background-image: url('images/car1.jpg');"></div>
+		      <div class="text-center ">
+		        <div class="content_inner flipInX">
+									
+									<h1>Discover India</h1>
+									<div class="button sliderbutton">
+										<div class="button_bcg"></div>
+									<a href="destinations.html">explore now<span></span><span></span><span></span></a></div>
+								
+				</div>
+		      </div>   
+		    </div> 
+		    <div class="carousel-item ">
+		       <div class="carback"style="background-image: url('images/car2.jpg')"></div>
+		      <div class="text-center ">
+		        <div class="content_inner flipInX" >
+									
+									<h1>through the royal cities</h1>
+									<div class="button sliderbutton">
+										<div class="button_bcg"></div>
+									<a href="westindia.html">explore now<span></span><span></span><span></span></a></div>
+				</div>
+		      </div>   
+		    </div>
+		    <div class="carousel-item ">
+		       <div class="carback"style="background-image: url('images/car3.jpg')"></div>
+		      <div class="text-center ">
+		      	<div class="content_inner flipInX" >
+									
+									<h1>the essence of indian tradition</h1>
+									<div class="button sliderbutton"><div class="button_bcg"></div>
+									<a href="centralindia.html">explore now<span></span><span></span><span></span></a></div>
+								</div>
+		      </div>   
+		    </div>
+		   
+		  </div>
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="fa fa-chevron-circle-left"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="fa fa-chevron-circle-right"></span>
+		  </a>
+		</div>
+
+		</div>
+</div>
+
+<div id="container">
+<center>
+<div class="search_tabs_container">
+						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/rupees.png" alt="" style="height: 40px;"><span>Affordable</span></div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/elephant.png" alt="">cultural</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/signpost.png" alt="">Guided</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/appointment.png" alt="" style="height: 40px;">Organized</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/tag.png" alt="" style="height: 40px;">Special Offers</div>
+							
+						</div>		
+					</div>
+</center>
+					<div class="search_panel active">
+						<p  id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							Since inventing the budget vacation over 47 years ago, TourIndia has offered the most affordable travel packages to the India’s most captivating places—from the breath-taking mountains of Himalya, to Mumbai, the ‘City of Dreams’....from the land of palaces and kings to sunny tea gardens in Tamil Nadu We Understand how difficult it is to arrange for trips in average families with single earning members.Keeping in view the needs and desires of people the trips and tours we present are at a very reasonable price most of which can be easily afforded by an average person.
+
+						</p>
+					</div>
+					<div class="search_panel">
+						<p  id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							India is a country of a vary vast culture.A kaleidoscope of traditions, culture, and vibrant geographies, India speaks for itself as a soul-stirring journey.The culture of rajasthan, those ghagra chollis with a large 'Ghungat', those traditional jewellry to a different style of saries in Maharashtra ... no less than 19 different tribes in Tripura to a always festive mood and science behind Temples. Just Explore these traditions and culture to give a closer look to a part of it. Plan a trip fast to enjoy the authentic taste of India.
+						</p>
+					</div>
+					<div class="search_panel">
+						<p  id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							What if you are going to explore the new places for the first time, we are here to guide. Get the fully guided tours with us. With a guide to help you in your travels we provide you with a multilingual, punctual, enthusiast guide who has historic, cultural and geographic knowledge of the area, who is engaging, flexible and outgoing. Don't dismiss your plans to visit a new place because you don't know about the place. You will enjoy a lot at a new place when you don't have a tension of finding a restorant, to resolve the tensions of loosing the way. With TourIndia, you plan your trip properly.
+
+
+						</p>
+					</div>
+					<div class="search_panel">
+						<p  id="search_form_4" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							Tours presented by us are fully organized and properly planned. Organized tours are great for those who don't have the time, or the interest, in planning every detail of a trip. ... Organized tours can also lead to a richer experience by connecting your group with knowledgeable guides and local experts. You already know how the trip will move. The fine details of the travel plan are mentioned to help you plan your other daily tasks.
+							This will be a sharp timing and organization with your support Of Course!
+						</p>
+					</div>
+					<div class="search_panel">
+						<p  id="search_form_5" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							We provides a lot of cash benifits and offers for you. Extra benifits will be provided if you plan the trip  with 6 or more members. Payment via cards will also cherish 15% discount on the travel expenses. We also organize various games and  a returning party on the end day so as we stand somewhere when you remember your memories for the trip. Extra benifits also include a scratch card which can help you enjoy the trip without a Rupee used. Unlimited Offers, Unlimited Enjoyment. 
+						</p>
+					</div>
+
+<h2 style="text-align: center;padding: 20px;">Vacations by Theme</h2>
+<div class="row" id="rowhead"style="margin: 10px;">
+	<div class="col-lg-7 col-md-12 col-sm-12">
+		<div class="row" >
+			<div class="col-lg-4 col-md-4 col-sm-12 " style="text-align: center;">
+				<img  width="80" height="67" alt="" src="images/allindia.png" >
+                      <h3><small>All India Tours</small></h3>	
+                      <p>Cherish the magic of an incredible country - India</p>
+                      <div class="button-row button">
+                      	<a href="india.html">See more</a>
+                      </div>
+              </div>
+			<div class="col-lg-4 col-md-4 col-sm-12" style="text-align: center;">
+				<img  width="135" height="67" alt="" src="images/goldentriangle.jpg" style="display: inline;">
+                      <h3><small>Golden Triangle Tours</small></h3>	
+                      <p>A mesmerizing retreat for cultural aficionados</p>
+                      <div class="button-row button">
+                      	<a href="golden.html">See more</a>
+                      </div>
+                 </div>
+			<div class="col-lg-4 col-md-4 col-sm-12 " style="text-align: center;">
+				<img  width="80" height="67" alt="" src="images/family.png" style="display: inline;">
+                      <h3><small>Family Holidays</small></h3>	
+                      <p>Escape into the worlds of fun with family</p>
+                      <div class="button-row button">
+                      	<a href="family.html">See more</a>
+                      </div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-5 col-md-12 col-sm-12" >
+		<div class=row>
+		<div class="col-lg-6 col-md-6 col-sm-12"style="text-align: center;" >
+			<img width=auto height="67" alt="" src="images/honeymoon.png" style="display: inline;">
+                      <h3><small>Honeymoon Packages</small></h3>	
+                      <p>Explore myriad of unforgettable honeymoon </p>
+                      <div class="button-row button">
+                      	<a href="honeymoon.html">See more</a>
+                      </div>
+                 </div>
+		<div class="col-lg-6 col-md-6 col-sm-12" style="text-align: center;">
+			<img width="67" height="67" alt="" src="images/winter.png" style="display: inline;">
+                      <h3><small>Winter Tours</small></h3>	
+                      <p>Cherish a feel-good spirit and breathtaking winter vacations</p>
+                      <div class="button-row button">
+                      	<a href="winter.html">See more</a>
+                      </div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--***********************************************************************************************************-->
+<div  id=special>
+<div >
+	<div class=row>
+		<div id=bsthead class="col-lg-12" style="text-align: center;">
+			<h1>We have the best tours</h1>
+		</div>
+	</div>
+		<div class=row>
+				<div class="col-md-6 col-sm-12 col-lg-4">
+					<div class="bsttour" >
+						<div class=bstback style="background-image: url('images/auroville.jpg');"></div>
+						<div class="bstdate">May 25th - June 01st</div>
+							<div class="button bstbutton "><div class="button_bcg"></div><a href="auroville.html">see more<span></span><span></span><span></span></a></div>
+							<div class="bstcenter text-center">
+								<h1>Auroville</h1>
+								<div class="bstprice">From &#8377;5500</div>
+								<div class="rating rating_5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-4">
+					<div class="bsttour" >
+						<div class=bstback style="background-image: url('images/agatti1.jpg');"></div>
+						<div class="bstdate">May 25th - June 01st</div>
+							<div class="button bstbutton "><div class="button_bcg"></div><a href="agatti.html">see more<span></span><span></span><span></span></a></div>
+							<div class="bstcenter text-center">
+								<h1>Agatti Island</h1>
+								<div class="bstprice">From &#8377;15200</div>
+								<div class="rating rating_5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-12 col-lg-4">
+					<div class="bsttour" >
+						<div class=bstback style="background-image: url('images/dukou.jpg');"></div>
+						<div class="bstdate">May 25th - June 01st</div>
+							<div class="button bstbutton "><div class="button_bcg"></div><a href="dzukou.html">see more<span></span><span></span><span></span></a></div>
+							<div class="bstcenter text-center">
+								<h1>Dzukou Valley</h1>
+								<div class="bstprice">From &#8377;4800</div>
+								<div class="rating rating_5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+					</div>
+				</div>
+				
+
+		</div>
+	</div>
+</div>
+<div id=pangong >
+	<div class="carback"style="background-image: url('images/pangongtso.jpg'); opacity: 0.2;"></div>
+	<div id=pangong_text>
+		<h1>Ladakh Deluxe Package</h1>
+								<div class="rating rating_5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+						
+		<p>Peace and Ladakh go hand in hand. Take the example of Pangong Tso, which is located in Ladakh. This place which is located at a high altitude has a spectacular lake. The sunrise, the sunset, the different types of birds and animals which come to the lake will make you feel as if you are in heaven.</p>
+		<div class="button bstbutton "><div class="button_bcg"></div><a href="ladakh.html">Book Now<span></span><span></span><span></span></a></div>
+							
+	</div>
+</div>
+<div id=destinations>
+	<h2>Most popular destinations</h2>
+	<div class="row">
+
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 over" >
+			<div style="background: url('images/kerala.jpg');">
+				<a href="kerala.html" class="imgtitle">Kerala Backwaters</a>
+			</div>
+			<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Shikara ride</li>
+		    		<li>Snake Boat race</li>
+		    		<li>Treehouse stay</li>
+		    		<li>Coffee plantations</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=kerala.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/Bangalore.jpeg');">
+				<a href="bangalore.html" class="imgtitle">Bangalore</a>
+			</div>
+			<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Film City</li>
+		    		<li>Ramanagaram Trek</li>
+		    		<li>Bannerghatta</li>
+		    		<li>banglore palace</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=bangalore.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/darjeeling.jpg');">
+				<a href="darjeeling.html" class="imgtitle">darjeeling</a>
+			</div>
+						<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Teesta</li>
+		    		<li>Toy train</li>
+		    		<li>Monasteries</li>
+		    		<li>Zoological Park</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=darjeeling.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/himachal-pradesh.jpg');">
+				<a href="himachal.html" class="imgtitle">himachal pradesh</a>
+			</div>
+						<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Dharamshala</li>
+		    		<li>Bir Billing</li>
+		    		<li>Snow retreat</li>
+		    		<li>Solang Valley</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=himachal.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>
+	<!--</div>
+	<div class="row">-->
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/goa.jpg');">
+				<a href="goa.html" class="imgtitle">Beaches of Goa</a>
+			</div>
+						<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Aguada fort</li>
+		    		<li>Reis Mogos</li>
+		    		<li>Bird Sanctury</li>
+		    		<li>Anjuna Beach</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=goa.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/uttarakhand.jpg');">
+				<a href="uttarakhand.html" class="imgtitle">Uttarakhand</a>
+			</div>
+						<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Dhanaulti</li>
+		    		<li>Mukteshwar</li>
+		    		<li>Uttarkashi</li>
+		    		<li>Gaumukh</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=uttarakhand.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/rajasthan.jpg');">
+				<a href="rajasthan.html" class="imgtitle">rajasthan</a>
+			</div>
+						<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Ranthambore</li>
+		    		<li>Chittorgarh</li>
+		    		<li>Bikaner</li>
+		    		<li>Desert camping</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=rajasthan.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/mount-abu.jpeg');">
+				<a href="mount.html" class="imgtitle">Mount Abu</a>
+			</div>
+						<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Dilwara Temples</li>
+		    		<li>Nakki Lake</li>
+		    		<li>Peace park</li>
+		    		<li>Guru Shikhar Peak</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=mount.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>
+	<!--</div>
+<div class="row">-->
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/north-india.jpg');">
+				<a href="north.html" class="imgtitle">North India</a>
+			</div>
+						<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Shimla-Manali</li>
+		    		<li>colorful rajasthan</li>
+		    		<li>Punjabi flavour</li>
+		    		<li>Srinagar-Ladakh</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=north.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/south-india.jpg');">
+				<a href="south.html" class="imgtitle">South India</a>
+			</div>
+						<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Kasaragod</li>
+		    		<li> Alleppey</li>
+		    		<li>Tiruvannamalai</li>
+		    		<li>Ooty</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=south.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/agra.jpg');">
+				<a href="agra.html" class="imgtitle">Agra</a>
+			</div>
+						<div class="overlay1">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Taj Mahal</li>
+		    		<li>Fatehpur Sikri</li>
+		    		<li>Jamma Masjid</li>
+		    		<li>Anguri Bagh</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=agra.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div><div class="col-12 col-sm-12 col-md-6 col col-lg-4 col-xl-3 ">
+			<div style="background: url('images/north-east.jpg');">
+				<a href="northeast.html" class="imgtitle">north east</a>
+			</div>
+						<div class="overlay2">
+		    <div class="text">
+		    	<ul style="text-align: left;list-style-type:square;">
+		    		<li>Tawang Monastery</li>
+		    		<li>Nathu La Pass</li>
+		    		<li>Nuranang Falls</li>
+		    		<li> Jaintia Hills</li>
+		    	</ul>
+		    	<div class='button' >
+		    		<div class="button_bcg"></div>
+		    		<a href=northeast.html>See More...</a></div>
+
+		    </div>
+		  </div>
+		</div>	</div>
+</div>
+
+		
+<div class=testimonial-area>
+	<center><h2>What our clients say about us</h2></center>
+
+	<div class=container>
+		<div class=row>
+			<div class=col-md-12>
+				<div class="test-slides owl-carousel" id=testimonial-carousel>
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist2.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Erika Johnson<span>July 16, 2019</span></h4>
+								<p>Best trip ever!!  
+								The travel designer at this travel agency not only planned but checked on our progress and satisfaction throughout the trip.  He really exceeded our expectations. From the very first email and phone call, he listened to what we wanted in this very customized Summer vacations</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist1.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Priyanshi Gupta<span>June 5, 2019</span></h4>
+								<p>The trip was a cultural, food and religious tour of South India.
+								Our agent immediately called and asked and then suggested several ideas.
+								She contacted me if there was going to a change and was available during the trip for a request.
+								The hotel selections were excellent and all centrally located and we were happy.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist3.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>David Wood<span>May 23, 2019</span></h4>
+								<p>Our trip planner was a thoroughly professional guide for our Rajasthan tour. He purposely over planned each day, taking into account the weather and many other factors, in order to maximize our time. His knowledge and love for his beautiful home land were evident daily.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class=item>
+						<div class=single-testimonial>
+							<div class=img-area>
+								<img src="images/tourist5.jpg">
+							</div>
+							<div class="testi-text">
+								<h4>Nancy Shergill<span>March 30, 2019</span></h4>
+								<p>The trip planned by this travel team was amazing. They got a good sense of what we wanted and catered the lodgings and tours perfectly. Although we had been to India several times before, we decided that we could use some help in structuring a trip starting in Delhi, to east and south.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	$('#testimonial-carousel').owlCarousel({
+		autoplay:true,
+		dots:false,
+		nav:true,
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+
+<div class="contact">
+		<div id="contactbcg" style="background-image:url(images/contact.png)"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div>
+						
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="frmcontainer" >
+						<div id="title">get in touch</div>
+						<form action="#" id="contactfrm" class="contactfrm" name=myform method="post" >
+							<input type="text" id="name" name=name class=" inputfield" placeholder="Name" required="required" data-error="Name is required." >
+							<input type="text" id="email" name=mail class="inputfield" placeholder="E-mail" required="required" data-error="Email is required." >
+							<input type="text" id="subject" name=subject class=" inputfield" placeholder="Subject" required="required" data-error="Subject is required." >
+							<textarea id="message" class="textfield " name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message." ></textarea>
+							<input type="submit" id="submit" class="button" value="send message">
+						</form>
+						<div id=submited class="alert alert-success alert-dismissible" style="top:120px;right:50px; width:200px;position: fixed;background: #31124b;display: none;">
+						  <a class=close data-dismiss=alert style="color:white;">&times;</a>
+						  <b style="color: white;">Your message has been succesfully sent.</b>
+						</div>
+	<script>
+		
+
+				$("#contactfrm").submit(function(e){
+					e.preventDefault();
+					 $("#submited").show(1000);
+				      $("#submited").animate({boxShadow:'0 16px 16px 0px #555'},4000);
+      				  $("#submited").slideUp();
+     
+				});
+	
+			</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr style="background: linear-gradient(to right,#fa9e1b,#8d4fff ); height:1px;margin: 0px;">
+	<div class="footer row">
+		<div class="col-lg-4" >
+			<a href=# id=tag><img src="images/logo.png"> TourIndia.com</a>
+			<br><br>
+			<p id=footerdiscription>Promissing to fulfill our duties with honesty and determination, We aim to fulfill your dreams to travel and enjoy the life to the fullest.We ensure you safe and memorable tour. </p>
+			<div class="rating rating_5" style="text-align: center;padding-right: 50px;">
+									<i class="fa fa-star" ></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+		</div>
+		<div class="col-lg-6 " >
+			<p style="text-align: center;color:white; font-weight: 700;text-transform: uppercase;">Arriving Soon</p>
+			<div class="row">
+				<div class="col-sm-6 " >
+			<ul class="coming" >
+				<li><div class=new><img src="images/indonesia-img.jpg" align=left> <p>Indonasia trip coming year<br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/sri-lanka-img.jpg" align="left"> <p> Visit Sri Lanka next Year<br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/singapore-img.jpg" align="left"> <p> This summer in Singapore <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+
+		<div class="col-sm-6 ">
+						<ul class="coming">
+				<li><div class=new><img src="images/thailand-img.jpg" align=left> <p>Planning for thailand  <br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/maldives-img.jpg" align="left"> <p> Sure to Maldives <br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/dubai-img.jpg" align="left"> <p> Dubai for a visit <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		<div class="col-lg-2" id=contacts>
+			<p>Contact Info</p>
+			<ul id=contactinfo>
+				<li><span class="fa fa-location-arrow">2346 Laxmi Nagar</li>
+				<li>New Delhi</li>
+				<li><a href="tel:1234567"><span class="fa fa-phone"></span> 6798-6798</a></li>
+				<li><a href="mailto:tourindia@gmail.com" target="_blank"><span class="fa fa-envelope"></span> tourindia@gmail.com</a></li>
+				<li id=icons><span class="fa fa-behance-square"></span> <span class="fa fa-facebook-square"></span> <span class="fa fa-twitter-square"></span></li>
+			</ul>
+		</div>
+	</div>
+
+    
+<!----------------------------------------------------------------------------------------------------->
+</div>
+
+ <div class="modal" id="mod">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-body" >
+        	<button  class="close" data-dismiss="modal" style="position: absolute;top: 0px;right: 10px;">&times;</button>
+          <div id=part1>
+          	<h4>Can we help you </h4>
+          <form>
+          	<div class="form-check" >
+      <label class="form-check-label" for="radio1" >
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" checked required>I am planning a family trip
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" required>I am planning a honeymoon trip
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input"  id="radio3" name="optradio" required>I am planning a trip with friends
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input"  id="radio4" name="optradio" required>I am planning a solo trip
+      </label>
+    </div>
+    <button class="btn btn-primary next" type="submit"  >next</button>
+          </form>
+      </div>
+      <div id=part2>
+      	<h4>May I know what kind of destination you are looking for?</h4>
+          	<div class="form-check" >
+      <label class="form-check-label" for="radio1" >
+        <input type="radio" class="form-check-input" id="radio5" name="optradio" checked required>Beaches
+    </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio6" name="optradio" required>Heritage
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input"  id="radio7" name="optradio" required>Wildlife
+      </label>
+    </div>
+   <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio6" name="optradio" required>Pilgrimage
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input"  id="radio7" name="optradio" required>Forts and Palaces
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio6" name="optradio" required>Hill Stations
+      </label>
+    </div>
+    <button class="back btn btn-danger">back</button>
+    <button class="btn btn-primary next" type="submit" >next</button>
+
+          </form>
+      	
+      </div>
+
+      <div id=part3>
+      	<h4>In which month are you planning to go</h4>
+      	<form>
+          	<div class="form-check" style="background: white;">
+     
+        <select class="form-control">
+        	<option>January</option>
+        	<option>February</option>
+        	<option>March</option>
+        	<option>April</option>
+        	<option>Mai</option>
+        	<option>June</option>
+        	<option>July</option>
+        	<option>August</option>
+        	<option>September</option>
+        	<option>October</option>
+        	<option>November</option>
+        	<option>December</option>
+        </select>
+      
+    </div>
+  
+    <button class="back btn btn-danger">back</button>
+    <button class="btn btn-primary next" type="submit"  >next</button>
+
+          </form>
+      	
+      </div>
+
+      <div id=part4>
+      	<h4>For how many days will your trip be?</h4>
+      	<form>
+          	<div class="form-check" style="background: white;">
+     
+        <select class="form-control">
+        	<option>3 days or less</option>
+        	<option>4 days</option>
+        	<option>5 days</option>
+        	<option>6 days</option>
+        	<option>7 or more days</option>
+        </select>
+      
+    </div>
+  
+    <button class="back btn btn-danger">back</button>
+    <button class="btn btn-primary next" type="submit"  >next</button>
+
+          </form>
+      	
+      </div>
+
+      <div id=part5>
+      	<h4>Your Email Id</h4>
+      	<p>We will send you the best travel tips of our verified travel agents on this email id</p>
+      	<form id=fom >
+      		<div class="form-check" style="background: white;">
+     
+        		<input type=email class="form-control" id=mail required>
+        		
+      
+    		</div>
+			    <button class="back btn btn-danger">back</button>
+			    <button class="btn btn-primary " type="submit" >Submit</button>
+
+          </form>
+      	
+      </div>
+      <div id=part6 style="text-align: justify;">
+      	<h4>Thank You</h4>
+      	<p>You will recieve the travel tips regularly regarding your destinations till your boarding month.You can unsubscibe by clicking on <b>unsubscribe</b> link in mail
+      	 </p>
+      	
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+	$('.modal-body>div').hide();
+		$('#part1').show();
+	$("#part1 .next ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part2').slideDown();
+	})
+	$("#part2 .next ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part3').slideDown();
+	})
+	$("#part3 .next ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part4').slideDown();
+	})
+	$("#part4 .next ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part5').slideDown();
+	})
+	
+		$("#fom").submit(function(e){
+			$('.modal-body>div').slideUp();
+			$('#part6').slideDown();
+			e.preventDefault();
+		});
+	
+	$("#part2 .back ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part1').slideDown();
+	})
+	$("#part3 .back ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part2').slideDown();
+	})
+	$("#part4 .back ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part3').slideDown();
+	})
+	$("#part5 .back ").click(function(){
+		$('.modal-body>div').slideUp();
+		$('#part4').slideDown();
+	})
+	$('.back,.next').click(function(e){
+		e.preventDefault();
+	})
+	
+</script>
+<script >
+	 var app=angular.module("myapp",[]);
+    app.controller("ctrl",function($scope,$timeout){
+      $timeout(function(){
+        $("#mod").modal("show");
+        
+      },20000);
+       $timeout(function(){
+        $("#mymod").modal("hide");
+        
+      },4000);
+  });
+</script>
+
+</span></li></ul></div></div></div></div></body>
+</body>
+</html>

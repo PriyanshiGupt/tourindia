@@ -1,0 +1,248 @@
+.container-fluid{
+	height: 500px;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	position: relative;
+	background-attachment: fixed!important;
+
+}
+.container-fluid h1{
+	text-align: center;
+	top:70%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color:white;
+	font-weight: 600;
+	font-size: 70px;
+}
+.ctrbcg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: #31124b;
+	opacity: 0.5;
+}
+.intro-text 
+{
+	font-size: 20px;
+	padding: 20px;
+	position: relative;
+}
+.intro-text .table{
+	text-align: center;
+}
+.intro-bcg{
+	position: absolute;
+	top:0px;
+	left:0px;
+	background:transparent;
+	height: 100%;
+	width: 100%;	 
+}
+.read
+{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: red;
+	cursor: pointer;
+}
+.minimize{
+	height: 150px;
+	overflow: hidden; 
+}
+.minimized-bcg{
+	background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+}
+.dist-row
+{
+	margin:10px 100px;
+}
+.dist-row h3{
+	text-align: center;
+	top:20px;
+	color:orange;
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 30px;
+	padding-bottom:20px; 
+}
+.dest-item
+{
+	border:1px solid #aaa;
+	padding: 0px;
+	/*height: 200px;*/
+	margin-bottom: 30px;
+}
+.dest-img{
+	padding: 0px;
+}
+.dest-img img
+{
+	width: 100%;
+	height: 100%;
+
+}
+.dest-info
+{
+	padding: 20px;
+}
+.dest-info h2
+{
+	color:#fa9e1b;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-family:sans-serif;
+}
+.dest-info p
+{
+	color:black;
+	font-size:17px;
+}
+.dest-but
+{
+	background: #eee;
+	padding: 20px 10px;
+	position: relative;
+	
+}
+.butt{
+	
+	width: 100%;
+	font-size: 14px;
+	padding: 8px;
+	background: white;
+	border:2px solid #8d4fff;
+	margin: 5px 0px;
+	color:#8d4fff;
+}
+.butt a{
+	
+	width: 100%;
+	font-size: 14px;
+	padding: 8px;
+	background: transparent;
+	margin: 5px 0px;
+	color:#8d4fff;
+	text-decoration: none;
+}
+.butt:hover{
+	color: white;
+	background:#8d4fff;
+}
+.butt:hover a{
+	color: white;
+}
+.side
+{
+	padding-top: 65px;
+}
+.tableheading{
+	position: relative;
+}
+.tableheading h2
+{	
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	background: linear-gradient(#fa9e1b,#e18505);
+	color:white;
+	font-weight: 400;
+	padding: 5px;
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.tableheading{
+	border:1px solid black;
+	padding:10px;
+}
+.table{
+	padding-top:50px;
+}
+.table a{
+	text-decoration:none;
+	color: black;
+}
+
+.table a:hover{
+	text-decoration:underline;
+	color: black;
+}
+
+@media only screen and (max-width: 600px)
+{
+.container-fluid{
+		height: 350px;
+	}
+	.container-fluid h1{
+		top:50%;
+		font-size: 60px;
+		white-space: nowrap;
+	}
+	.side
+	{display: none;}
+	.dist-row{
+		padding: 10px;
+		margin: 0px;
+	}
+}
+@media only screen and (max-width: 1323px)
+{
+.container-fluid{
+		height: 400px;
+	}
+	.container-fluid h1{
+		top:50%;
+		font-size: 60px;
+		white-space: nowrap;
+	}
+	.dist-row{
+		padding: 50px;
+		margin: 0px;
+	}
+}
+
+@media only screen and (max-width: 991px)
+{
+
+	.dist-row
+	{
+		padding: 50px;
+		margin: 0px;
+	}
+	.dest-but button{float: left;}
+	.butt{width:30%;margin-right: 20px;}
+	.dest-but .butt:last-child{margin-right: 0px;}
+}
+@media only screen and (max-width: 824px)
+{
+
+	.dist-row
+	{
+		padding: 50px;
+		margin: 0px;
+	}
+	.butt{width:100%;margin-right: 0px;}
+}
+@media only screen and (max-width: 767px)
+{	
+	.dest-but button{float: left;}
+	.butt{width:30%;margin-right: 20px;}
+	.dest-but .butt:last-child{margin-right: 0px;}
+}
+@media only screen and (max-width: 525px)
+{
+	.container-fluid h1{
+		font-size: 60px;
+		white-space: normal;
+	}
+	.dest-but button{float: left;}
+	.butt{width:100%;margin-right: 0px;}
+	
+}

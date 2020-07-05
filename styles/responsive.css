@@ -1,0 +1,370 @@
+
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	
+}
+
+/************
+3. 1380px
+************/
+
+
+/************
+3. 1280px
+************/
+@media only screen and (max-width: 1600px)
+{
+	#nav-carousel
+	{
+		height:657px;
+	}
+	.carousel,.carousel-item {
+		height: 657px;
+	}
+	nav .navbar-brand{
+	font-size: 30px;
+	margin-left:100px;
+	font-weight: 900;
+	}
+	nav
+	{
+		height:140px;
+	}
+	.navbar-brand img
+	{
+		height: 60px;
+	}
+	.navbar .nav-item:first-child
+	{
+		margin-left: 200px;
+	}
+	.navbar .nav-item{
+		margin-left:25px;
+	}
+	.navbar .nav-link{
+	font-weight: 500;
+	font-size:20px;
+	}
+	.content_inner h1{font-size: 90px;}
+	.carousel-control-prev,.carousel-control-next{
+	font-size: 50px;
+	}
+	.sliderbutton{
+		margin-top: 70px;
+	}
+	.button
+	{
+	border-radius: 27px;
+	height:53px;
+	
+	}
+
+	.button span
+	{
+		width: 5.75px;
+		height: 5.63px;
+		border-radius: 50%;
+		margin-right: 2px;
+	}
+	.button a
+	{
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 53px;
+	padding-left: 46px;
+	padding-right: 46px;
+	}
+	.search_tabs_container
+	{
+		width: calc(100% - 250px);
+	}
+	#destinations .row .col-sm-12 {margin-bottom: 30px;}
+	.bsttour{margin-bottom: 30px;}
+
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	.navbar .nav-item:first-child
+	{
+		margin-left: 100px;
+	}
+	.search_tabs_container
+	{
+		width: calc(100% - 170px);
+	}
+	.bstcenter h1{font-size:40px;}
+	#destinations{padding: 80px 100px;}
+}
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	.navbar .nav-item:first-child
+	{
+		margin-left: 40px;
+	}
+	.search_tabs_container
+	{
+		width: calc(100% - 100px);
+	}
+	.bstcenter h1{font-size:35px;}
+	.button-row a{padding: 0px 30px;text-align: center;font-size: 15px;}
+	#destinations{padding: 80px;}
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	nav .navbar-brand{
+	margin-left:50px;
+	}
+	.content_inner{
+		font-size: 70px;
+	}
+	#pangong_text p{
+	font-size: 16px;
+	padding:10px 50px;}
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+	.search_tabs_container{display: none;}
+	.search_panel.active{display: none!important;}
+	.flipInX h1{font-size: 70px;}
+	.contact #contactbcg
+	{
+		display: none;
+	}
+	.button
+	{
+		width:200px;
+	}
+	nav .navbar-brand{
+	margin-left:40px;
+	}
+	#pangong_text p{padding-top:15px;}
+	#pangong_text h1{font-size: 30px;}
+	.bstbutton{height: 45px;}
+	.button a
+	{
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 45px;
+	text-align: center;
+	padding:3px 10px;
+	}
+	.sliderbutton{
+		margin-top: 30px;
+	}
+	.navbar .nav-item:first-child
+	{
+		margin: 15px 24px 5px;
+		
+	}
+	.navbar .nav-item
+	{
+		margin: 5px 24px;
+		
+	}
+	.navbar .nav-link:hover{
+		border:none;
+		font-size: 22px;
+	}
+	.collapse{
+		position: absolute;
+		top:100px;
+		left: 0px;
+		width: 100%;
+		height: 250px;
+		background:  linear-gradient(to right, #fa9e1b, #8d4fff);
+		transition: all ease 1s;
+	}
+	
+}
+
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+	
+}
+
+/************
+8. 880px
+************/
+
+/*@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+	
+	#pangong_text p{
+	font-size: 15px;
+	padding:10px 60px;}
+	
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 600px)
+{
+	#pangong_text p{
+	font-size: 14px;
+	padding:10px 50px;}
+	#pangong_text{opacity: 0.8;}
+	.flipInX h1{font-size: 50px;}
+	#nav-carousel
+	{
+		height:400px;
+	}
+	.carousel,.carousel-item {
+		height: 400px;
+	}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	#destinations{
+	padding: 50px 60px;}
+}
+
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 529px)
+{
+		#pangong_text p{
+	padding:10px 40px;}
+	#pangong_text{width: 90%;}
+
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	nav .navbar-brand{margin-left:1px;}
+	#pangong_text{height: 80%;}
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	h2{font-size: 24px;}
+	p{font-size: 14px;}
+		.testi-text
+	{
+		padding: 20px;
+	}
+	.testi-text h4
+	{
+		font-size: 30px;
+		margin-bottom: 30px;
+		font-family: 'Shrikhand';
+	}
+	.img-area
+	{
+		position: relative;
+		margin-top: 0px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.single-testimonial
+	{
+		color: #fff;
+		padding-left: 0px;
+		position: relative;
+		margin: 0 15px 15px;
+	}
+}
+
+/************
+14. 400px
+************/
+@media only screen and (max-width: 415px)
+{
+	.navbar-brand img
+	{
+		height: 40px;
+	}
+	nav .navbar-brand{
+		font-size: 28px;
+		font-weight: 600;}
+}
+@media only screen and (max-width: 400px)
+{
+	#special {padding: 10px;}
+	#pangong_text{height: 90%;}
+
+
+}
+@media only screen and (max-width: 355px)
+{
+	.navbar-brand img
+	{
+		height: 35px;
+	}
+	nav .navbar-brand{
+		font-size: 28px;
+		font-weight: 600;}
+		.bar1, .bar2, .bar3 
+		{
+			  width: 30px;
+			  height: 4px;
+		}
+	.navbar-toggler{
+		margin:0px;
+	}
+	nav{height: 100px;}
+
+}

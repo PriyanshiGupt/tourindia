@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TourIndia</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="styles/main.js"></script>
+<link rel="short icon" type=image href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/destinationfileitems.css">
+
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<script src="owl.carousel.js"></script>
+</head>
+<body data-spy=scroll data-target=".nav-pills" data-offset=300 style="position: relative;">
+	<nav class="navbar navbar-expand-lg ">
+					
+		  <a class="navbar-brand" href="home.html"><img src="images/logo.png"> TourIndia.com</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		      <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		    	<li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      
+		      <li class="nav-item">
+		        <a class="nav-link" href="packages.html">Packages</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="destinations.html">Destinations</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="experiences.html">Experiences</a>
+		      </li>    
+		    </ul>
+		  </div>  
+		</nav>
+		<div class="container-fluid top" style="background:pink url('images/westindia.jpg');">
+		<div class=ctrbcg></div>
+		<h1>West India</h1>
+		</div>
+
+		<div class="container-fluid" style="margin: 90px 0px;">
+			<div class="row" style="">
+				<div class="col-lg-2 col-sm-2" style="position: relative;">
+					<ul class="nav nav-pills flex-column" style="top:10px;">
+						    <li class="nav-item">
+						      <a class="nav-link " href="#section1">Ahemdabad</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section2">Bikaner</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section3">Daman and Diu</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section4">Gujarat</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section5">Jaisalmer</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#section6">Pune</a>
+						    </li>
+					</ul>
+<script>
+	$(document).ready(function(){
+		$('.intro-text').removeClass('container');
+		$(window).scroll(function(){
+			var h=$(window).scrollTop();
+			var lim=$("#last").offset().top;
+			var w=$('.nav-pills').width();
+			var tw=$(window).width();
+		lim=lim-100;
+
+		if(h>300&&h<lim&&tw>=768)
+		{
+			$(".nav-pills").css({"position":"fixed", "top":"150px", "width":w+"px" });
+		}
+		else{
+			$(".nav-pills").css({"position":"relative", "top":"10px"});
+		}
+		lim=lim-200;
+		if(h>300&&h<lim)
+		{
+			$("#add2").addClass("fixadd");
+		}
+		else{
+			$("#add2").removeClass("fixadd");
+		}
+
+
+		})
+		
+
+	});
+</script>
+				</div>
+
+				<div class="col-lg-8 col-md-10 material">
+					<div id="section1" class="grp container-fluid">
+						<img src="images/ahmedabad.jpg" width="100%">
+						<div class="dest-title">Ahmedabad</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Ahmedabad is world famous because of Mahatma Gandhi's Ashram. It has a number of tourist points, both within the walled city and beyond it. 
+The tombs of Ahmed Shah and his queens, Ahmed Shah's Mosque, Jama Masjid, Mosque of Sidi Sayid, Teen Darwaza or Triple Gateway are major monuments.
+ Other important monuments include Rani Rupmati's Mosque, Rani Sipri's Mosque, Raj Rabri Mosque, Hathee Singh Jain Temple and Siddi Bashir Mosque. 
+ Kankaria Lake, Kutbi Mazar, Bhadra Fort, Dada-hari-di-Vav (an architectural step well), Victoria Gardens, N C Mehta Museum of Miniatures and Calico 
+ Textile Museum are also important places to visit. The walled city boasts of a number of 'pols' or traditional colonies, which date back to the 18th century.
+ <br>
+Places Around Ahmedabad
+There are many tourist spots near Ahmedabad. Sarkhej, a spot 8 km southwest of the city, has important historical monuments. Nineteen km north of the city is Adlaj Vav, an intricately built step well. Lothal, an ancient dock belonging to the Indus Valley Civilization, lies 85 km southwest of Ahmedabad. The town of Modhera is 102 km northwest of the city and boasts of an ancient sun temple. Patan lies 130 km northwest of Ahmedabad and has about 100 Jain temples.
+</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section2" class="grp container-fluid">
+						<img src="images/bikaner.jpg" width="100%">
+						<div class="dest-title">Bikaner</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Junagarh fort was built by a Mughal army general, Raja Rai Singh, in 1593. The courtyard of the fort along with the balcony, kiosks and windows are perfect examples of the artisanship of that time. The beautiful cutworks and dots on the red stones and the marbles are fascinating. The various parts of the palace-the Dewan-iI-khas, the Phool Mahal, Hawa Mahal, Badal Mahal and Anup Mahal-reflect the glorious architecture of Bikaner.
+<br>
+Lalgarh Palace, built by Maharaja Ganaga Singh in memory of his father, is situated 3 km north of Bikaner city. The Rajasthan Tourism Development Corporation as part of their tourism promotion program has converted some portions of the palace to tourist hotels. Other parts of the palace have been converted into a museum named as the Sadul Museum to preserve the glory of the yesteryears of Rajasthan in general and Bikaner in particular.
+<br>
+Ganga Golden Jubilee Museum is one of the best museums of Rajasthan with some fabulous collection of antiques and artilleries.
+<br>
+The Bhandasar Jain Temple, dedicated to the 23rd Jain tirthankara, is also a place worth visiting.
+<br>
+The Camel Research Farm carries out breeding and training of camels-the only fighting force and medium of transportation in the past.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section3" class="grp container-fluid">
+						<img src="images/daman.jpg" width="100%">
+						<div class="dest-title">Daman and Diu</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+In Daman, one can visit the Fort of St. Jerome at Nani Daman, where there is a Jain temple as well. The 17th-century-old Se Cathedral and the Church of Our Lady of Rosary in Moti Daman are also worth a visit, and one can see the exquisite Portuguese carvings on the walls of these churches. Built in ancient Gothic style, these are a feast for the eyes. The stately Light House, the amusement park and the Gandhi Park at Daman jetty are also places of interest. Among the beaches, Devka beach is the most famous. Others include the Jampore beach, which is of interest to the swimmers and is very near the Gujarat border. The lake garden of Satya Nagar Udyan is famous for its fountains and promenades.
+<br>
+In Diu, the Zampa Gateway is of particular interest. It has carvings of lions, angels and a priest and has a chapel inside with an inscription dating back to 1702. The artificial Zampa waterfall is also attractive. St. Paul's Church is the only active church till date. Nearby is the old St. Thomas's Church that has now been taken over by the authorities and converted into the Diu Museum. The Church of St. Francis of Assisi has been converted to a hospital. The Marwar memorial commemorates the victory over the Portuguese. The massive fort built in 1541 is now weathered and weak. It is of major tourist interest. Other places include Jallandhar and Gangeshwar temple.
+<br>
+The Nagoa beach is the most famous in Diu. Gomptimata, Chakratirth and the beautiful Sunset Point are the other famous beaches. The Jama Masjid is also famous.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section4" class="grp container-fluid">
+						<img src="images/gujarat.jpg" width="100%">
+						<div class="dest-title">Gujarat</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Ahmedabad, the city of Ahmed Shah (the medieval ruler of Gujarat), is known for its rich past and its association with Mahatma Gandhi. The city offers the traveler a unique style of architecture, which is a blend of Hindu and Islamic styles (Indo-Saracenic style of architecture). The monuments of Ahmedabad mainly date back to the 15th century. Ahmedabad has been known for its industry since medieval times. Presently it is famous for its textile mills and is often referred to as the 'Manchester of the East'.
+<br>
+Gandhinagar, situated about 25 kilometers north of Ahmedabad, is the newly built capital of Gujarat. Gandhinagar, named after Mahatma Gandhi, has been built on a grid pattern. The presence of abundant foliage here has earned it the title of the 'Green Capital'.
+<br>
+Jamnagar is situated in the Saurashtra region of Gujarat around 302 km from Ahmedabad. Major sites here include the Lakhota Fort, Kotha Bastion, Willington Crescent, Solarium, Jamsaheb's Palace, and Rozi and Bedi ports.
+<br>
+Patan lies further north of Jamnagar, founded during the 9th century. Originally known as Anhilwad Patan, the city is famous for its architectural wonders built during the rule of the Solanki dynasty. The Rani Udayamati vav (step well) and the Sahastralinga Lake are some of the tourist attractions here.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section5" class="grp container-fluid">
+						<img src="images/jaisalmer.jpg" width="100%">
+						<div class="dest-title">Jaisalmer</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+Visiting Jaisalmer itself means a visit to the Jaisalmer Fort. Built over the Trikuta hill, this fort is the biggest and the most beautiful landmark of the city. The fort is occupied by shops, stalls, and a number of other business concerns. This fort accommodates quarter of the city's population.
+Just outside the fort is the Manakchowk, the famous marketplace of Jaisalmer. It is a good place for bargaining the local products.
+The Jain temple, a place worth visiting, is also situated inside the fort itself. The temple, made between 12th and 15th century, bears testimony to Rajasthan's unique artistry.
+Havelis are the mansions built by the wealthy merchants, which are still in very good condition. The intricate craftsmanship is beyond parallel. The havelis like the Patwon-ki-Haveli and Salim-Singh-ki-Haveli are remarkable for their exclusive cutwork, yellow and red stone treatment and the bracket-shaped decoration of peacocks.
+Gadsisar Sagar Tank is a famous place for an outing. Earlier it used to be the source of water for the entire city. A number of migratory birds flock this place during the winter season.
+Desert Culture Center and Museum is another place that would give the visitor a clear insight of the place. The museum has a number of old coins, different kinds of textile, traditional Rajasthani instruments, and some fossils that were found in the desert.
+Baba Bagh is an oasis at the bank of a man-made dam. It has greenery all around to give a much-needed relief to the local people.
+The Jain temple of Lodhruva, which reminds of the glory of the former capital city Lodhruva, is a place worth visiting.
+Sam Sand Dunes, situated at the edge of the Thar Desert, is a place gaining tremendous tourist attraction these days. This sandy place is famous for watching sunset and taking a camel ride.</p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+<div id="section6" class="grp container-fluid">
+						<img src="images/pune.jpg" width="100%">
+						<div class="dest-title" id=last>Pune</div>
+						<div class="intro-text container minimize">
+	<div class="intro-bcg minimized-bcg"></div>
+<p>
+The most important landmark of Pune is the residence of the self-proclaimed guru, Bhagwan Rajneesh, also known as Osho. The ashram in Pune still attracts thousands of devotees, sightseers, curious onlookers and lots of controversy. The Shanwarawada Palace with its pleasant gardens and huge outer walls is another must visit in Pune. 
+<br>
+The Raja Kelkar Museum with unusual, the antique and the artistic collections draws several tourists. The major exhibits are the 17th century miniatures, of musical instruments, of antique pottery, and unusually, betel-nut cutters and brass padlocks. The other must visit museum is the Tribal Museum near the railway station. 
+<br>
+The Gandhi National memorial, in the Aga Khan palace is also an important landmark of Pune. The 8th century rock-cut temple, the Ptaleshwar Temple on a hill a little outside town is one of the most popular temples, dedicated to goddess Parvati. There is a famous Muslim shrine, the Qamarali Darvesh that has a stone that is reputed to levitate. Twenty-five kilometers south-west of Pune, perched on a hill-top, is one of Maharashtra's many forest, Sinhagad, or the Lion Fort. 
+<br>
+For enjoying the gorgeous greens Pune offers the Bund gardens on the banks of the river Mula-Mutha. </p>
+<div class="read">Read More +</div>
+ </div>
+			</div>
+
+				</div>
+
+				<div class="col-lg-2" style="position: relative;padding: 0px;">
+					
+  <div id=add2 style=" background:url('images/dressadd.png') ; background-size: cover;height: 550px;width: 225px;left: 0px;position: absolute;">
+    <a style="float: right; padding:10px 15px 0px 0px;cursor: pointer;" id=grapes> &times;</a>
+    <center><a href=https://www.facebook.com/dresstheoccasions target="_blank" class="btn btn-warning" style="font-size: 30px;margin-top:480px;">Browse..</a></center>
+  </div>
+				</div>
+			</div>
+		</div>
+<script>
+	$(document).ready(function(){
+		$("#grapes").click(function(){
+			$("#add2").fadeOut();
+		})
+	})
+</script>
+		<hr style="background: linear-gradient(to right,#fa9e1b,#8d4fff ); height:1px;margin: 0px;">
+	<div class="footer row">
+		<div class="col-lg-4" >
+			<a href=# id=tag><img src="images/logo.png"> TourIndia.com</a>
+			<br><br>
+			<p id=footerdiscription>Promissing to fulfill our duties with honesty and determination, We aim to fulfill your dreams to travel and enjoy the life to the fullest.We ensure you safe and memorable tour. </p>
+			<div class="rating rating_5" style="text-align: center;padding-right: 50px;">
+									<i class="fa fa-star" ></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+		</div>
+		<div class="col-lg-6 " >
+			<p style="text-align: center;color:white; font-weight: 700;text-transform: uppercase;">Arriving Soon</p>
+			<div class="row">
+				<div class="col-sm-6 " >
+			<ul class="coming" >
+				<li><div class=new><img src="images/indonesia-img.jpg" align=left> <p>Indonasia trip coming year<br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/sri-lanka-img.jpg" align="left"> <p> Visit Sri Lanka next Year<br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/singapore-img.jpg" align="left"> <p> This summer in Singapore <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+
+		<div class="col-sm-6 ">
+						<ul class="coming">
+				<li><div class=new><img src="images/thailand-img.jpg" align=left> <p>Planning for thailand  <br><span> Jan 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/maldives-img.jpg" align="left"> <p> Sure to Maldives <br><span> March 2020</span></p></div></li>
+				
+				<li><div class="new"><img src="images/dubai-img.jpg" align="left"> <p> Dubai for a visit <br><span> July 2020</span></p></div></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		<div class="col-lg-2" id=contacts>
+			<p>Contact Info</p>
+			<ul id=contactinfo>
+				<li><span class="fa fa-location-arrow">2346 Laxmi Nagar</li>
+				<li>New Delhi</li>
+				<li><a href="tel:1234567"><span class="fa fa-phone"></span> 6798-6798</a></li>
+				<li><a href="mailto:tourindia@gmail.com" target="_blank"><span class="fa fa-envelope"></span> tourindia@gmail.com</a></li>
+				<li id=icons><span class="fa fa-behance-square"></span> <span class="fa fa-facebook-square"></span> <span class="fa fa-twitter-square"></span></li>
+			</ul>
+		</div>
+	</div>
+
+ <script>
+ 	$('.read').click(function(){
+ 		$(this).parent().toggleClass('minimize');
+ 		$(this).prev().prev().toggleClass('minimized-bcg');
+ 		$(this).text($(this).text() == 'Read More +' ? 'Read Less -' : 'Read More +');
+ 	})
+ </script>
+  		
+</body>
+</html>
