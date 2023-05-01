@@ -92,9 +92,9 @@
 							<input type="date" id="departure" name=mail class="inputfield departuredate" placeholder="Departure" required="required" oninvalid="setCustomValidity('Date of departure is required')" oninput="setCustomValidity('');checkValidity()">
 
 
-							<input type="number" id="adult" name=name class=" inputfield" placeholder="Adults" required="required" oninvalid='setCustomValidity("No of adults is required")' oninput="setCustomValidity('');checkValidity()">
+							<input type="number" id="adult" name=name class=" inputfield" placeholder="Adults" required="required" min='0' oninvalid='setCustomValidity("No of adults is required")' oninput="setCustomValidity('');checkValidity()">
 
-							<input type="number" id="children" name=name class=" inputfield" placeholder="Children" required="required" oninvalid="setCustomValidity('No if children is required')" oninput="setCustomValidity('');checkValidity()">
+							<input type="number" id="children" name=name class=" inputfield" placeholder="Children" required="required" min='0' oninvalid="setCustomValidity('No if children is required')" oninput="setCustomValidity('');checkValidity()">
 
 							<select id="accomodation" class="inputfield" required="required">
 								<option value="Select Accomodation" disabled="disabled">Select Accomodation</option>
