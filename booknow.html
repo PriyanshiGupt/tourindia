@@ -79,22 +79,22 @@
 					<div class="frmcontainer" >
 						<div id="title">Let's Plan your trip now</div>
 						<form action="#" id="contactfrm" class="contactfrm" name=myform method="post" >
-							<input type="text" id="name" name=name class=" inputfield" placeholder="Name" required="required" oninvalid="setCustomValidity('Name is required')" >
-							<input type="email" id="email" name=mail class="inputfield" placeholder="E-mail" required="required" oninvalid="setCustomValidity('Email is required')">
+							<input type="text" id="name" name=name class=" inputfield" placeholder="Name" required="required" oninvalid="setCustomValidity('Name is required')" oninput="setCustomValidity('');checkValidity()">
+							<input type="email" id="email" name=mail class="inputfield" placeholder="E-mail" required="required" oninvalid="setCustomValidity('Email is required')" oninput="setCustomValidity('');checkValidity()">
 							<!--<input type="text" id="country" name=name class=" inputfield" placeholder="Country to visit" required="required" data-error="Country to visit is required." >-->
 							<select id=country name=name class="inputfield" required="required">
 									<option value="Country to visit" disabled="disabled">Country to Visit</option>
 									<option value=india>India</option>
 							</select>
-							<input type="text" id="phone" name=mail class="inputfield" placeholder="Phone Number" required="required"  pattern="[1-9]{1}[0-9]{9}" oninvalid="setCustomValidity('Please enter a valid 10 digit phone number')">
+							<input type="text" id="phone" name=mail class="inputfield" placeholder="Phone Number" required="required"  pattern="[1-9]{1}[0-9]{9}" oninvalid="setCustomValidity('Please enter a valid 10 digit phone number')" oninput="setCustomValidity('');checkValidity()">
 							
-							<input type="date" id="arrival" name=name class=" inputfield arrivaldate" placeholder="Arrival" required="required" oninvalid="setCustomValidity('Date of arrival is required')" >
-							<input type="date" id="departure" name=mail class="inputfield departuredate" placeholder="Departure" required="required" oninvalid="setCustomValidity('Date of departure is required')" >
+							<input type="date" id="arrival" name=name class=" inputfield arrivaldate" placeholder="Arrival" required="required" oninvalid="setCustomValidity('Date of arrival is required')" oninput="setCustomValidity('');checkValidity()">
+							<input type="date" id="departure" name=mail class="inputfield departuredate" placeholder="Departure" required="required" oninvalid="setCustomValidity('Date of departure is required')" oninput="setCustomValidity('');checkValidity()">
 
 
-							<input type="number" id="adult" name=name class=" inputfield" placeholder="Adults" required="required" oninvalid='setCustomValidity("No of adults is required")' >
+							<input type="number" id="adult" name=name class=" inputfield" placeholder="Adults" required="required" oninvalid='setCustomValidity("No of adults is required")' oninput="setCustomValidity('');checkValidity()">
 
-							<input type="number" id="children" name=name class=" inputfield" placeholder="Children" required="required" oninvalid="setCustomValidity('No if children is required')" >
+							<input type="number" id="children" name=name class=" inputfield" placeholder="Children" required="required" oninvalid="setCustomValidity('No if children is required')" oninput="setCustomValidity('');checkValidity()">
 
 							<select id="accomodation" class="inputfield" required="required">
 								<option value="Select Accomodation" disabled="disabled">Select Accomodation</option>
